@@ -1,0 +1,93 @@
+<style>
+  body {
+    background-color: #e1bfe5;
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+    margin: 0;
+    padding: 20px;
+  }
+
+  .container {
+    max-width: 960px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  h1 {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0;
+    padding-bottom: 10px;
+  }
+
+  h2 {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 20px 0 10px;
+  }
+
+  p {
+    margin: 10px 0;
+  }
+
+  a {
+    color: #0066cc;
+    text-decoration: none;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+  }
+
+  blockquote {
+    margin: 20px 0;
+    padding-left: 20px;
+    border-left: 2px solid #0066cc;
+    font-style: italic;
+  }
+
+  ul {
+    margin: 10px 0;
+    padding-left: 20px;
+  }
+
+  li {
+    margin-bottom: 5px;
+  }
+
+  .date {
+    font-style: italic;
+    color: #888;
+  }
+</style>
+
+<body>
+  <h1>Music?</h1>
+  <ul>
+    <li>Force Shifters</li>
+    <li>Ableton</li>
+  </ul>
+  <p>
+    reinstalled spitfire audio labsl and messing around with trumpets, trying to
+    find instrumentation for force shifters
+  </p>
+  <button onClick="playAudio()">Play</button>
+
+  <audio id="audio">
+    <source src="./public/1.ogg" type="audio/ogg" />
+  </audio>
+</body>
+
+<script>
+  function playAudio() {
+    document.getElementById("audio").play();
+  }
+</script>
